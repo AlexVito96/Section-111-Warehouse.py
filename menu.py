@@ -9,6 +9,7 @@ def menu():
 
     print(' [1] Register Items')
     print(' [2] Display Catalog')
+    print(' [3] Display Out of Stock')
 
     print(" [x] Exit")
 
