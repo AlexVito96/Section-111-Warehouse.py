@@ -43,7 +43,7 @@
 
         - Display the log of events
         
-        - ** HW ** Display list of categories (unique cats)
+        - ** HW/ CR ** Display list of categories (unique cats)
 """ 
 
 from menu import menu, clear, header
