@@ -50,6 +50,7 @@ from menu import menu, clear, header
 from item import Item
 import pickle
 import datetime
+import pandas as pd
 
 # global vars
 log = []
@@ -229,6 +230,24 @@ def print_log():
     for entry in log:
         print(entry)
 
+def categorize():
+    size = len(catalog)
+    
+    temp_list = []
+
+    for item in catalog:
+        category = item.category
+        
+        if(category not in temp_list):
+            temp_list.append(category)
+    
+    for category in temp_list:
+        print("\n" + category + "\n")
+        
+        
+       
+        
+
 # instructions
 # start menu
 
@@ -265,5 +284,7 @@ while(opc != 'x'):
         save_catalog()
     elif(opc == '8'):
         print_log()
+    elif(opc== '9'):
+        categorize()
     
     input("Press enter to continue...")
